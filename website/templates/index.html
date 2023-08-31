@@ -1,0 +1,61 @@
+{% extends "base.html" %} <!-- Inherits base.html -->
+{% block title %} Home {% endblock %}
+{% block content %}
+
+
+<!-- TODO: ADD REMAINING SLIDES + DESCRIPTIONS -->
+<div id="project_carousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src={{ url_for("static", filename="imgs/iot.jpg") }} class="d-block w-90">
+        </div>
+        <div class="carousel-item">
+            <img src={{ url_for("static", filename="imgs/kpiworx.jpg") }} class="d-block w-90">
+        </div>
+        <div class="carousel-item">
+            <img src={{ url_for("static", filename="imgs/zfp.jpg") }} class="d-block w-90">
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#project_carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" style="filter: invert(100%);"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#project_carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" style="filter: invert(100%);"></span>
+    </button>
+
+</div>
+
+<div class="mt-4 p-5 text-black rounded" style="background-color: rgb(245, 245, 245); font-size: 22px;">
+    <h1 class="display-3">Welcome to <span style="color: rgb(3, 165, 252);">MESALOGIC!</span></p></h1>
+    <p>Here at MESALOGIC, we don't just offer solutions. <br>We engineer <span style="color: rgb(3, 165, 252);">success stories</span> trough the seamless convergences
+    of <span style="color: rgb(3, 165, 252);">cutting-edge technology</span> and <span style="color: rgb(3, 165, 252);">unwavering expertise</span>. <br>
+    We are your partners in navigating the dynamic realm of <span style="color: rgb(3, 165, 252);">SCADA </span>and 
+    <span style="color: rgb(3, 165, 252);"> remote alarms</span>, revolutionizing the way industries operate and communicate.</p>
+</div>
+
+<div class="mt-4 p-5 text-black" style="background-color: rgb(245, 245, 245); font-size: 22px;">
+    <h1 class="display-3">Our Mission</p></h1>
+    <p>We want to unearth the <span style="color: rgb(3, 165, 252);">uncharted possibilities</span> where mainstream meets <span style="color: rgb(3, 165, 252);">MSR</span> and IT intertwines with <span style="color: rgb(3, 165, 252);">innovation</span>.<br>
+    We are explorers of new horizons, constantly seeking out the <span style="color: rgb(3, 165, 252);">latest technologies</span> that can empower your business and ensuring they <br>
+    seamlessly integrate into your existing IT infrastructure.
+    </p>
+    <br>
+    <p>
+        Imagine a world where efficiency isn't a goal but a <span style="color: rgb(3, 165, 252);">reality</span>, where alarms aren't just remote but <span style="color: rgb(3, 165, 252);">insightful</span>,<br>
+         where the potential of <span style="color: rgb(3, 165, 252);">synergy between MSR and IT</span> isn't a dream but a <span style="color: rgb(3, 165, 252);">tangible advantage</span>. <br>
+         That's the world we're creating with our clients — a world where industries <span style="color: rgb(3, 165, 252);">flourish</span>, operations <span style="color: rgb(3, 165, 252);">excel</span>, and growth knows <span style="color: rgb(3, 165, 252);">no bounds</span>.
+    </p>
+    <br>
+    <p>
+        <span style="color: rgb(3, 165, 252);">Join us</span> on this electrifying journey where curiosity knows no limits, technology knows no boundaries, and progress knows no stopping. <br>
+        Explore the unexplored, embrace the future, and <span style="color: rgb(3, 165, 252);">elevate your enterprise </span> with <span style="color: rgb(3, 165, 252);">MESALOGIC.</span>. 
+        Your success story begins <span style="color: rgb(3, 165, 252);">here</span>.
+    </p>
+    <br>
+    <p>Welcome to the future of SCADA and remote alarms. Welcome to MESALOGIC.</p>
+    <a href="/products">Join us now!</a>
+</div>
+<br>
+{% endblock %}
