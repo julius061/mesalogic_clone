@@ -2,6 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="keywords"
+      lang="de"
+      content="Emation, e3m, Energiemanagement, Energiemanagementsoftware, Energie-Management, Energiemanagementsystem, Energiecontrolling, Energieeffizienz, Energieeinsparung, DIN-EN-16001, Energieausweis, e3m Box, e3m Data Center, e3m Connector, Filialisten, Energiedatenerfassung, M-Bus, Energiezähler, Zählerdatenerfassung, Lastkurve, Lastverlauf, Filialnetz, System, Management, Energie-Management, Energiemanagement-Systeme, Energiemanagement-System Energiemonitoringsystem"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--INFO: content =".." => Take up entire width of screen, used for mobile optimization-->
     <link
@@ -14,13 +19,22 @@
     <!--INFO : anonymous = no credentials are sent, other possible value would be use-credentials -->
     <!--INFO: CDN = content delivery network -->
 
+    <link rel="shortcut icon" href={{ url_for("static",
+    filename="imgs/favicon.ico") }}/>
+
     <title>{% block title %}Home{% endblock %}</title>
     <!-- a block in a base template can be overriden in a child template -->
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(245, 245, 245);">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: rgb(245, 245, 245)"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand" href="/"><img src={{ url_for("static", filename="imgs/mesalogic_logo.png") }}></a>
+        <a class="navbar-brand" href="/"
+          ><img src={{ url_for("static", filename="imgs/mesalogic_logo.png")
+          }}></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -32,7 +46,12 @@
         <div class="navbar-collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="/about" style="color: black; font-size: 24px;">About</a>
+              <a
+                class="nav-link"
+                href="/about"
+                style="color: black; font-size: 24px"
+                >About</a
+              >
             </li>
             <li class="nav-item dropdown">
               <a
@@ -41,23 +60,53 @@
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
-                style="color: black; font-size: 24px;"
+                style="color: black; font-size: 24px"
               >
                 Products
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/" style="color: black;">SCADA / HMI / GLT</a></li>
-                <li><a class="dropdown-item" href="/" style="color: black;">CLOUD / IoT</a></li>
-                <li><a class="dropdown-item" href="/" style="color: black;">KPI-MANAGEMENT</a></li>
-                <li><a class="dropdown-item" href="/" style="color: black;">ALARM MANAGEMENT</a></li>
-                <li><a class="dropdown-item" href="/" style="color: black;">REPORTING / ANALYTIX</a></li>
+                <li>
+                  <a class="dropdown-item" href="/" style="color: black"
+                    >SCADA / HMI / GLT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/" style="color: black"
+                    >CLOUD / IoT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/" style="color: black"
+                    >KPI-MANAGEMENT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/" style="color: black"
+                    >ALARM MANAGEMENT</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/" style="color: black"
+                    >REPORTING / ANALYTIX</a
+                  >
+                </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/downloads" style="color: black; font-size: 24px;">Downloads</a>
+              <a
+                class="nav-link"
+                href="/downloads"
+                style="color: black; font-size: 24px"
+                >Downloads</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/partners" style="color: black; font-size: 24px;">Partners</a>
+              <a
+                class="nav-link"
+                href="/partners"
+                style="color: black; font-size: 24px"
+                >Partners</a
+              >
             </li>
           </ul>
         </div>
@@ -70,5 +119,103 @@
       crossorigin="anonymous"
       defer
     ></script>
+
+    <footer class="text-center text-lg-start bg-dark text-white">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span>Connect with us on social networks:</span>
+        </div>
+
+        <div>
+          <a href="https://www.facebook.com/mesalogic/" class="me-4 text-reset">
+            <i>Facebook</i>
+          </a>
+          <a
+            href="https://de.linkedin.com/company/mesalogic-gmbh"
+            class="me-4 text-reset"
+          >
+            <i>LinkedIn</i>
+          </a>
+          <a
+            href="https://www.xing.com/pages/mesalogicgmbh"
+            class="me-4 text-reset"
+          >
+            <i>XING</i>
+          </a>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>MESALOGIC GmbH
+              </h6>
+              <p>
+                Siemensstraße 10 <br>
+                D-35799 Merenberg <br>
+                <br>
+                +49 (0)6471 912 880-0 <br>
+                info@mesalogic.de
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">SCADA / HMI / GLT</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Cloud / IoT</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">KPI-Management</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Alarm-Management</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Reporting / AnalytiX</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- TODO: Make Links work! -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="/about" class="text-reset">About</a>
+              </p>
+              <p>
+                <a href="/products" class="text-reset">Products</a>
+              </p>
+              <p>
+                <a href="/downloads" class="text-reset">Downloads</a>
+              </p>
+              <p>
+                <a href="/partners" class="text-reset">Partners</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mesalogic.de/">MESALOGIC</a>
+      </div>
+    </footer>
   </body>
 </html>
